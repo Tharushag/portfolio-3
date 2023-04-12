@@ -1,10 +1,10 @@
 import { useRef, useState, useEffect } from 'react';
 import Tooltip from '@mui/material/Tooltip';
 import jobs from '../Data';
-import emailImg from '../Icons/email.png';
-import phoneImg from '../Icons/phone-call.png';
-import githubImg from '../Icons/github.png';
-import linkedinImg from '../Icons/linkedin.png';
+import emailImg from '../icons/email.png';
+import phoneImg from '../icons/phone-call.png';
+import githubImg from '../icons/github.png';
+import linkedinImg from '../icons/linkedin.png';
 
 function Details() {
   const [jobIndex, setJobIndex] = useState(0);

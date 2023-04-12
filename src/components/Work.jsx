@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Details from './Details';
-import arrow from '../Icons/right-arrow.png'
+import Showcase from './Showcase';
+import arrow from '../icons/right-arrow.png'
 
 function Work() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -32,7 +33,10 @@ function Work() {
         />
       </a>
     </section>
-    <section id="work"></section>
+
+    <section id="work">
+      <Showcase />
+    </section>
     </>
   );
 }

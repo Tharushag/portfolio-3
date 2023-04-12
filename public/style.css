@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .non-draggable {
   -webkit-user-drag: none;
   user-select: none;
@@ -46,7 +50,6 @@ nav {
 nav ul {
   align-items: center;
   display: flex;
-  list-style-type: none;
   font-size: 1.5rem;
   font-weight: 200;
   width: fit-content;
@@ -384,4 +387,61 @@ nav li {
 
 #work {
   background-color: #24657b;
+  color: #DFF6FF;
+}
+
+.showcase {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.showcase-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  align-items: center;
+  color: #DFF6FF !important;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.title img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.title:first-child img {
+  margin-right: .5rem;
+}
+
+.showcase-info p {
+  font-size: 1.2rem;
+  width: 45ch;
+  line-height: 150%;
+}
+
+.showcase-info ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.showcase-info li {
+  font-family: "Roboto Mono", monospace;
+}
+
+.img-container {
+  width: min-content;
+}
+
+.img-container img {
+  width: 600px;
 }
