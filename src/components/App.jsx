@@ -1,4 +1,4 @@
-import Work from "./Work";
+import Work from './Work';
 
 function App() {
   return <Work />;
