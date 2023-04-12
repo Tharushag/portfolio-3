@@ -17,7 +17,7 @@ a {
 .linear-gradient {
   background-color: #06283d;
   background-image: linear-gradient(to bottom, #06283d, #24657b);
-  height: 100vh; /* Set the height to whatever value you need */
+  height: calc(100vh - 4rem); /* Set the height to whatever value you need */
 }
 
 /* Navigation bar */
@@ -27,6 +27,8 @@ nav {
   color: #A2C1CE;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 100;
 }
 
 nav ul {
@@ -195,4 +197,29 @@ nav li {
   .hamburger {
     right: 1rem;
   }
+}
+
+/* Details */
+
+.details {
+  align-items: center;
+  color: #A2C1CE;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.job {
+  font-weight: 200;
+  font-size: 2.3rem;
 }
