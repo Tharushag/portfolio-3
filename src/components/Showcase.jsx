@@ -50,7 +50,7 @@ function Showcase() {
 
       <div className="showcase">
         <div className="showcase-description">
-          <a href="https://memento-hqc5.onrender.com" target="_blank" rel="noreferrer" className="title"><img src={share} className="non-draggable" alt="share-icon" />Cofee</a>
+          <a href="https://tharushag.github.io/Coffee-Shop/" target="_blank" rel="noreferrer" className="title"><img src={share} className="non-draggable" alt="share-icon" />Cofee</a>
           <p>A static website for a coffee shop meant to showcase my front-end skills.</p>
 
           <ul>
@@ -63,9 +63,9 @@ function Showcase() {
         </div>
 
         <div className={ condition2 ? "shadow showcase-view": "showcase-view" }>
-          <img className={ condition2 ? "img1": "" } src={ cofee1 } alt="project Memento" loading="lazy" />
-          <img src={ cofee2 } alt="project Memento" loading="lazy" />
-          <img className={ condition2 ? "img2" : "" } src={ cofee3 } alt="project Memento" loading="lazy" />
+          <img className={ condition2 ? "img1": "" } src={ cofee1 } alt="project Cofee" loading="lazy" />
+          <img src={ cofee2 } alt="project Cofee" loading="lazy" />
+          <img className={ condition2 ? "img2" : "" } src={ cofee3 } alt="project Cofee" loading="lazy" />
         </div>
       </div>
     </>

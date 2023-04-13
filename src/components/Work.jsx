@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Details from './Details';
 import Showcase from './Showcase';
+import Project from './Projects';
 import arrow from '../icons/right-arrow.png'
+import { projects } from '../Data';
 
 function Work() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,6 +20,10 @@ function Work() {
           window.removeEventListener('scroll', handleScroll);
       };
   }, []);
+
+  function createProject(item, index) {
+    return <Project key={index} data={item} />;
+  }
 
   return (
     <>
@@ -37,7 +43,11 @@ function Work() {
     <section id="work">
       <Showcase />
 
-      <div></div>
+      <div className="project-box">
+        <div className="project-row">
+          {projects.map(createProject)}
+        </div>
+      </div>
     </section>
     </>
   );
