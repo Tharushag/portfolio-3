@@ -36,6 +36,8 @@ function Work() {
 
     <section id="work">
       <Showcase />
+
+      <div></div>
     </section>
     </>
   );
