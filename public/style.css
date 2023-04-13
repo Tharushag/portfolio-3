@@ -33,7 +33,7 @@ ul {
 #landing-page {
   background-color: #06283d;
   background-image: linear-gradient(to bottom, #06283d, #24657b);
-  height: calc(100vh - 4rem); /* Set the height to whatever value you need */
+  height: 100vh;
 }
 
 /* Navigation bar */
@@ -359,7 +359,7 @@ nav li {
 
 .arrow {
   background-color: rgba(255, 255, 255, .1);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); 
   border-radius: 4px;
   bottom: 2rem;
   cursor: pointer;
@@ -428,7 +428,7 @@ nav li {
   align-items: center;
   color: #DFF6FF !important;
   display: flex;
-  font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+  font-size: clamp(1.3rem, 1.6vw, 1.5rem);
   font-weight: 700;
   width: fit-content;
 }
@@ -438,8 +438,8 @@ nav li {
 }
 
 .title img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: clamp(1.2rem, 1.6vw, 1.5rem);
+  width: clamp(1.2rem, 1.6vw, 1.5rem);
 }
 
 .title:first-child img {
@@ -447,7 +447,7 @@ nav li {
 }
 
 .showcase-description p {
-  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-size: clamp(1.1rem, 1.3vw, 1.2rem);
   line-height: 150%;
 }
 
@@ -576,17 +576,17 @@ nav li {
 }
 
 .project h1 {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
   font-weight: 600;
 }
 
 .project img {
-  height: 1.2rem;
-  width: 1.2rem;
+  height: clamp(1.1rem, 1.3vw, 1.2rem);
+  width: clamp(1.1rem, 1.3vw, 1.2rem);
 }
 
 .project p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
   line-height: 130%;
 }
 
@@ -602,7 +602,7 @@ nav li {
 .project-tags p {
   color: #728F9E;
   font-family: "Roboto Mono", monospace;
-  font-size: .9rem;
+  font-size: clamp(.8rem, 1vw, .9rem);
   font-weight: 400;
 }
 
@@ -616,4 +616,27 @@ nav li {
   .project {
     flex: 100%;
   }
+}
+
+/* 404 PAGE */
+
+.page-not-found {
+  align-items: center;
+  color: #DFF6FF;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.page-not-found h1 {
+  font-size: clamp(5rem, 16vw, 15rem);
+}
+
+.page-not-found p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
 }
