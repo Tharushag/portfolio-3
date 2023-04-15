@@ -821,3 +821,91 @@ nav li {
 .info-para {
   font-weight: 200;
 }
+
+.msg-me {
+  color: #DFF6FF; 
+  padding-bottom: 6rem;
+}
+
+.msg-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.msg-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35rem;
+}
+
+.msg-box p, label {
+  font-weight: 300;
+}
+
+.error-box {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+
+.error {
+  color: red;
+  font-size: .8rem;
+}
+
+input, textarea {
+  background-color: transparent;
+  border: 2px solid rgba(223, 246, 255, .5);
+  border-top: none;
+  color: #DFF6FF;
+  font-weight: 200;
+  outline: none;
+  margin-top: .5rem;
+  padding: .25rem .5rem;
+  width: calc(100% - 1rem);
+}
+input:focus, textarea:focus {
+  border-color: rgba(223, 246, 255, 1);
+}
+
+textarea {
+  resize: none;
+  height: 10rem;
+}
+
+@media (max-width: 700px) {
+  .msg-me {
+    height: initial !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .msg-wrapper {
+    padding: 1rem;
+  }
+
+  .msg-box {
+    width: 100%;
+  }
+}
+
+.send-box {
+  display: flex;
+  justify-content: center;
+}
+
+.send-btn {
+  background-color: #DFF6FF !important;
+  border-radius: 6px !important;
+  color: black !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: clamp(1rem, 1.2vw, 1.1rem) !important;
+  font-weight: 500 !important; 
+  text-transform: none !important;
+  padding: .5rem clamp(1rem, 3vw, 2rem) !important;
+  width: fit-content !important;
+}
