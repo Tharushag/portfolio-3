@@ -23,10 +23,56 @@ const projects = [
 
 const skills = {
   languages: ["Node.js", "Python", "JavaScript", "HTML", "CSS"],
-  libraries: ["Express.js", "JQuery", "Flask", "Bootstrap"],
+  libraries: ["Express.js", "React.js", "JQuery", "Flask", "Bootstrap"],
   tools: ["Github", "Git", "MongoDB", "SQL"],
   design: ["Figma", "Photoshop", "REST API", "Wireframing"]
 };
 
+const education = [
+  {
+    title: "Diploma in Information Technology",
+    date: "Sept 2019 - July 2021",
+    university: "Sri Lanka International Buddhist Academy"
+  },
+  {
+    title: "Diploma of Science (Engineering Studies)",
+    date: "Feb 2022 - Nov 2022",
+    university: "Australian College of Business and Technology"
+  },
+  {
+    title: "University Foundation Program - Science (Engineering Studies)",
+    date: "March 2021 - Dec 2021",
+    university: "Australian College of Business and Technology"
+  },
+  {
+    title: "G.C.E Ordinary Level Exam",
+    date: "March 2021",
+    university: "Sussex College Kandy"
+  },
+];
+
+const certifications = [
+  {
+    title: "100 Days of Code: The Complete Python Pro Bootcamp",
+    date: "17 Jan 2023",
+    university: "Udemy",
+  },
+  {
+    title: "The complete 2023 Web development Bootcamp",
+    date: "28 March 2023",
+    university: "Udemy",
+  },
+  {
+    title: "Certificate in Advanced English - C1",
+    date: "25 June 2022",
+    university: "Cambridge University",
+  },
+  {
+    title: "Diplôme d'Etudes en Langue Française - A1",
+    date: "15 July 2019",
+    university: "Alliance Française",
+  },
+];
+
 export default jobs;
-export { projects, skills };
+export { projects, skills, education, certifications };

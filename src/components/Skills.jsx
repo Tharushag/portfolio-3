@@ -19,12 +19,12 @@ function Skills() {
         </ul>
 
         <ul>
-          <li className="heading regular-para">Libraries</li>
+          <li className="heading regular-para">Tools</li>
           { skills.tools.map(createList) }
         </ul>
 
         <ul>
-          <li className="heading regular-para">Libraries</li>
+          <li className="heading regular-para">Design</li>
           { skills.design.map(createList) }
         </ul>
 

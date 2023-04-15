@@ -649,7 +649,7 @@ nav li {
 #about {
   display: flex;
   flex-direction: column;
-  gap: 9rem;
+  gap: clamp(2rem, 10vw, 9rem);
 }
 
 .about-me {
@@ -778,6 +778,12 @@ nav li {
   }
 }
 
+.education, .certifications {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .about-title {
   width: fit-content;
   font-weight: 800;
@@ -786,4 +792,32 @@ nav li {
 .about-title hr {
   border: 3px solid #DFF6FF;
   width: 50%;
+}
+
+.info-title {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(.5rem, 2vw, 1rem);
+  margin-bottom: .5rem;
+}
+
+.education h2 {
+  background-color: #DFF6FF;
+  color: #06283D;
+}
+
+.info-title h2 {
+  font-weight: 500;
+  padding: 0 .2rem;
+}
+
+.info-title p {
+  color: #81ADBD;
+  font-size: clamp(.9rem, 2vw, 1rem);
+  font-weight: 500;
+}
+
+.info-para {
+  font-weight: 200;
 }

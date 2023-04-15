@@ -1,10 +1,13 @@
-function Education() {
+function Education(props) {
+  const { data } = props;
+
   return (
-    <div className="education">
-      <div className="about-title regular-para">
-        <h1>Education</h1>
-        <hr></hr>
+    <div className="info">
+      <div className="info-title">
+        <h2 className="regular-para">{data.title}</h2>
+        <p>{data.date}</p>
       </div>
+      <p className="info-para regular-para">{data.university}</p>
     </div>
   );
 }
