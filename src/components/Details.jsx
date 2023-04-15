@@ -50,22 +50,22 @@ function Details() {
     <div className="details">
       <div>
         <h1 className="name">Hi I'm Tharusha <br/>Gunawardane</h1>
-        <p className="job">Hi I'm a {jobTitle} <span className="cursor">I</span></p>
+        <p className="job">I'm a {jobTitle} <span className="cursor">I</span></p>
       </div>
 
       <hr />
 
       <div className="text-contact">
-        <a className="contact-link" href="mailto:tharushadgunawardane@gmail.com">tharushadgunawardane@gmail.com</a><br />
-        <p className="contact-link">+94 755 589 085</p>
+        <a className="contact-link regular-para" href="mailto:tharushadgunawardane@gmail.com">tharushadgunawardane@gmail.com</a><br />
+        <p className="contact-link regular-para">+94 755 589 085</p>
         <div className="link-wrapper">
           <div className="link-box">
-            <a className="contact-link" href="https://github.com/Tharushag" target="_blank" rel="noreferrer">github.com/Tharushag</a>
+            <a className="contact-link regular-para" href="https://github.com/Tharushag" target="_blank" rel="noreferrer">github.com/Tharushag</a>
           </div>
         </div>
         <div className="link-wrapper">
           <div className="link-box">
-            <a className="contact-link" href="https://www.linkedin.com/in/tharusha-gunawardane-80a014252" target="_blank" rel="noreferrer">linkedin.com/in/tharusha-gunawardane</a>
+            <a className="contact-link regular-para" href="https://www.linkedin.com/in/tharusha-gunawardane-80a014252" target="_blank" rel="noreferrer">linkedin.com/in/tharusha-gunawardane</a>
           </div>
         </div>
       </div>

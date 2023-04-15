@@ -1,4 +1,4 @@
-const jobs = ["front-end developer", "back-end developer", "Web designer", "Full-stack developer", "UX/UI Designer"];
+const jobs = ["Front-end developer", "Back-end developer", "Web designer", "Full-stack developer", "UX/UI Designer"];
 
 const projects = [
   {
@@ -21,5 +21,12 @@ const projects = [
   }
 ];
 
+const skills = {
+  languages: ["Node.js", "Python", "JavaScript", "HTML", "CSS"],
+  libraries: ["Express.js", "JQuery", "Flask", "Bootstrap"],
+  tools: ["Github", "Git", "MongoDB", "SQL"],
+  design: ["Figma", "Photoshop", "REST API", "Wireframing"]
+};
+
 export default jobs;
-export {projects};
+export { projects, skills };

@@ -295,10 +295,13 @@ nav li {
 
 .contact-link {
   color: #DFF6FF;
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
   font-weight: 200;
   margin: .8rem 0;
   white-space: nowrap;
+}
+
+.regular-para {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
 }
 
 .icon-contact {
@@ -386,7 +389,7 @@ nav li {
 
 /* WORK */
 
-#work {
+#work, #about {
   background-color: #24657b;
   color: #DFF6FF;
   padding-bottom: 6rem;
@@ -639,4 +642,148 @@ nav li {
 
 .page-not-found p {
   font-size: clamp(1rem, 1.3vw, 1.2rem);
+}
+
+/* ABOUT */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+
+.about-me {
+  height: initial !important;
+}
+
+.story-box {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: clamp(4rem, 8vw, 7rem);
+  margin-top: 5rem;
+}
+
+.me-box {
+  position: relative;
+  z-index: 10;
+}
+
+.primary-overlay, .secondary-overlay {
+  background-color: rgba(6, 40, 61, .3);
+  position: relative;
+  width: fit-content;
+}
+
+.primary-overlay {
+  top: 1rem;
+  left: 1rem;
+}
+
+.primary-overlay img {
+  display: block;
+  position: relative;
+  width: clamp(11rem, 16vw, 15rem);
+  z-index: -1;
+}
+
+.story {
+  color: #DFF6FF;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.story h1, p {
+  line-height: 120%;
+  margin: 0;
+  text-align: justify;
+}
+
+.story p {
+  font-weight: 300;
+}
+
+@media (max-width: 700px) {
+  .me-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .overlay-wrapper {
+    margin-right: 2rem;
+  }
+
+  .story-box {
+    flex-direction: column;
+    margin: 3rem 2rem 0;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .story-box {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.skill-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.skill-box {
+  background-color: rgba(6, 40, 61, 0.7);
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(2rem, 6vw, 5rem);
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.skill-box p {
+  position: absolute;
+  filter: blur(5px);
+  left: 1rem;
+  top: 1rem;
+  z-index: -1
+}
+
+.skill-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.skill-box li {
+  font-weight: 300;
+}
+
+.heading {
+  font-weight: 600 !important;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 500px) {
+  #about {
+    padding: 1rem;
+  }
+}
+
+.about-title {
+  width: fit-content;
+  font-weight: 800;
+}
+
+.about-title hr {
+  border: 3px solid #DFF6FF;
+  width: 50%;
 }
