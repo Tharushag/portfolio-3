@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/static/js/main.d9a27317.js",
+    "static/media/cofee-1.png": "/static/media/cofee-1.98010410b1c97ccc57bf.png",
+    "static/media/cofee-3.png": "/static/media/cofee-3.bc115d18cff1d8aaf2b8.png",
+    "static/media/cofee-2.png": "/static/media/cofee-2.fede1e316465a5dc721b.png",
+    "static/media/memento-2.png": "/static/media/memento-2.3e9aabf2a0b8bd1ef07b.png",
+    "static/media/memento-1.png": "/static/media/memento-1.f75701686dd2e3067948.png",
+    "static/media/memento-3.png": "/static/media/memento-3.ae92bd8a2db727be8988.png",
+    "static/media/github.png": "/static/media/github.2d4cd6a66bcaa11536ba.png",
+    "static/media/email.png": "/static/media/email.4eee1a5f536115a24f20.png",
+    "static/media/phone-call.png": "/static/media/phone-call.c8bd7eb7d54297d7e58f.png",
+    "static/media/linkedin.png": "/static/media/linkedin.9b77518ebb2a99ffacc5.png",
+    "static/media/me.jpg": "/static/media/me.f7a853dceb938ff05e80.jpg",
+    "static/media/share.png": "/static/media/share.1b57b4a73b128d6d747e.png",
+    "index.html": "/index.html",
+    "main.d9a27317.js.map": "/static/js/main.d9a27317.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d9a27317.js"
+  ]
+}
