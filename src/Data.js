@@ -1,4 +1,4 @@
-const jobs = ["Front-end developer", "Back-end developer", "Web designer", "Full-stack developer", "UX/UI Designer"];
+const jobs = ["Front-End Developer", "Back-End Developer", "Web Designer", "Full-Stack Developer", "UX/UI Designer"];
 
 const projects = [
   {

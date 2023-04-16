@@ -113,7 +113,7 @@ function Message() {
           }
 
           <form className="msg-box" onSubmit={ handleSubmit } >
-            <p className="regular-para">Want to  about discussa project or a question in general? Feel free to send me a message.</p>
+            <p className="regular-para">Want to discuss about a project or a question in general? Feel free to send me a message</p>
 
             <div>
               <div className="error-box">
