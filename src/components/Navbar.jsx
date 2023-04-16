@@ -1,6 +1,7 @@
-import { useRef, useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Hamburger from './Hamburger';
+import { useRef, useState, useEffect } from 'react';
+import NavLink from './NavLink';
 
 function Navbar(props) {
   const [navOpen, setNavOpen] = useState(false);
@@ -26,20 +27,32 @@ function Navbar(props) {
     setNavOpen(!navOpen);
   }
 
+  const pathList = [
+    {
+      text: "Work",
+      link: "/work"
+    },
+    {
+      text: "About",
+      link: "/about"
+    },
+    {
+      text: "Message",
+      link: "/message-me"
+    },
+  ];
+
+  function createNavLink(item, index) {
+    return <NavLink key={ index } link={ item.link } text={ item.text } />;
+  }
+
   return (
     <nav ref={navRef}>
       <a href="/" className="brand">t.</a>
 
       <ul style={navOpen ? {height: '16rem'} : {height: '0'}} className={props.page}>
-        <li>
-          <a href="/" className="nav-link">Work</a>
-        </li>
-        <li>
-          <a href="/about" className="nav-link">About</a>
-        </li>
-        <li>
-          <a href="/message-me" className="nav-link">Message me</a>
-        </li>
+        { pathList.map(createNavLink) }
+
         <li>
           <a href={`${[process.env.PUBLIC_URL]}/pdfs/Tharusha Gunawardane - Resume.pdf`} target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" className="resume-btn">Resume</Button>

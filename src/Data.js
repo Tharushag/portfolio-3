@@ -74,5 +74,38 @@ const certifications = [
   },
 ];
 
-export default jobs;
-export { projects, skills, education, certifications };
+const references = [
+  {
+    link: "https://www.flaticon.com/authors/uniconlabs",
+    text: "Icons made by Uniconlabs from www.flaticon.com"
+  },
+  {
+    link: "https://www.flaticon.com/authors/creaticca-creative-agency",
+    text: "Icons made by Creaticca Creative Agency"
+  },
+  {
+    link: "https://www.flaticon.com/authors/pixel-perfect",
+    text: "Icons made by Pixel perfect from www.flaticon.com"
+  },
+  {
+    link: "https://www.freepik.com",
+    text: "Icons made Freepik from www.flaticon.com"
+  },
+  {
+    link: "https://www.flaticon.com/authors/stockio",
+    text: "Icons made by Stockio from www.flaticon.com"
+  },
+  {
+    link: "https://www.flaticon.com/authors/iconkanan",
+    text: "Icons made by IconKanan from www.flaticon.com"
+  }
+];
+
+export { 
+  certifications, 
+  education,
+  jobs,
+  references,
+  projects,
+  skills
+};

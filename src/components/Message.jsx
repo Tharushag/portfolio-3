@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import Navbar from './Navbar';
-import Title from './Title';
-import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
+import Button from '@mui/material/Button';
 import emailjs from '@emailjs/browser';
+import Footer from './Footer';
+import Title from './Title';
+import Navbar from './Navbar';
+import { useState } from 'react';
 
 function Message() {
   const [input, setInput] = useState({
@@ -97,68 +98,73 @@ function Message() {
   }
 
   return (
-    <section id="landing-page" className="msg-me">
-      <Navbar page="message-me" />
+    <>
 
-      <div className="msg-wrapper">
-        <Title title="Let's talk" />
+      <section id="landing-page" className="msg-me">
+        <Navbar page="message-me" />
 
-        { emailStatus !== 0 && 
-          <Alert severity={ emailStatus === 200 ? "success" : "error" }>
-            { emailStatus === 200 ? "Email sent! I'll get back to you as soon as possible." : "Sorry, something went wrong." }
-          </Alert> 
-        }
+        <div className="msg-wrapper">
+          <Title title="Let's talk" />
 
-        <form className="msg-box" onSubmit={ handleSubmit } >
-          <p className="regular-para">Want to  about discussa project or a question in general? Feel free to send me a message.</p>
+          { emailStatus !== 0 && 
+            <Alert severity={ emailStatus === 200 ? "success" : "error" }>
+              { emailStatus === 200 ? "Email sent! I'll get back to you as soon as possible." : "Sorry, something went wrong." }
+            </Alert> 
+          }
 
-          <div>
-            <div className="error-box">
-              <label className="regular-para">Name</label>
-              <p className="error">{ emptyError.name }</p>
+          <form className="msg-box" onSubmit={ handleSubmit } >
+            <p className="regular-para">Want to  about discussa project or a question in general? Feel free to send me a message.</p>
+
+            <div>
+              <div className="error-box">
+                <label className="regular-para">Name</label>
+                <p className="error">{ emptyError.name }</p>
+              </div>
+              <input 
+                type="text"
+                name="name" 
+                className="regular-para" 
+                onChange={ handleChange } 
+                value={ input.name } 
+              />
             </div>
-            <input 
-              type="text"
-              name="name" 
-              className="regular-para" 
-              onChange={ handleChange } 
-              value={ input.name } 
-            />
-          </div>
 
-          <div>
-            <div className="error-box">
-              <label className="regular-para">Email</label>
-              <p className="error">{ emailError || emptyError.email }</p>
+            <div>
+              <div className="error-box">
+                <label className="regular-para">Email</label>
+                <p className="error">{ emailError || emptyError.email }</p>
+              </div>
+              <input 
+                type="email" 
+                name="email" 
+                className="regular-para" 
+                onChange={ handleChange } 
+                value={ input.email } 
+              />
             </div>
-            <input 
-              type="email" 
-              name="email" 
-              className="regular-para" 
-              onChange={ handleChange } 
-              value={ input.email } 
-            />
-          </div>
 
-          <div>
-            <div className="error-box">
-              <label className="regular-para">Message</label>
-              <p className="error">{ emptyError.msg }</p>
+            <div>
+              <div className="error-box">
+                <label className="regular-para">Message</label>
+                <p className="error">{ emptyError.msg }</p>
+              </div>
+              <textarea 
+                name="msg" 
+                className="regular-para" 
+                onChange={ handleChange } 
+                value={ input.msg } 
+              />  
             </div>
-            <textarea 
-              name="msg" 
-              className="regular-para" 
-              onChange={ handleChange } 
-              value={ input.msg } 
-            />  
-          </div>
 
-          <div className="send-box">
-            <Button type="submit" className="send-btn">Send</Button>
-          </div>
-        </form>
-      </div>
-    </section>
+            <div className="send-box">
+              <Button type="submit" className="send-btn">Send</Button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <Footer />
+    </>
   );
 }
 

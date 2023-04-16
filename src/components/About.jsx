@@ -1,10 +1,11 @@
+import Education from './Education';
+import { education, certifications } from '../Data';
+import Footer from './Footer';
 import Navbar from './Navbar';
 import Me from './Me';
 import Story from './Story';
 import Skills from './Skills';
 import Title from './Title';
-import Education from './Education';
-import { education, certifications } from '../Data';
 
 function About() {
   function createEducation(item, index) {
@@ -35,6 +36,8 @@ function About() {
           { certifications.map(createEducation) }
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }
