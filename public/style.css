@@ -825,6 +825,7 @@ nav li {
 .msg-me {
   color: #DFF6FF; 
   padding-bottom: 6rem;
+  height: initial !important;
 }
 
 .msg-wrapper {
@@ -853,8 +854,9 @@ nav li {
 }
 
 .error {
-  color: red;
+  color:#E97451;
   font-size: .8rem;
+  font-weight: 500;
 }
 
 input, textarea {

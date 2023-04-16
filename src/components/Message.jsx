@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Navbar from './Navbar';
 import Title from './Title';
 import Button from '@mui/material/Button';
+import Alert from '@mui/material/Alert';
+import emailjs from '@emailjs/browser';
 
 function Message() {
   const [input, setInput] = useState({
@@ -16,6 +18,9 @@ function Message() {
     email: "",
     msg: ""
   });
+
+  const [emailStatus, setEmailStatus] = useState(0);
+
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -44,12 +49,24 @@ function Message() {
     isEmpty();
 
     if (!areThereErrors()) {
-      console.log("Nicely done!");
-    }
+      var templateParams = {
+        from_name: input.name,
+        from_email: input.email,
+        message: input.msg
+      };
+     
+      emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_PUBLIC_KEY)
+        .then(() => {
+          setEmailStatus(200);
+        })
+        .catch(() => {
+          setEmailStatus(500);
+        });
+      }
   }
 
   function areThereErrors() {
-    if ((emailError === "") && (emptyError.name === "") && (emptyError.email === "") && (emptyError.msg === "")) {
+    if ((emailError === "") && (input.name !== "") && (input.email !== "") && (input.msg !== "")) {
       return false;
     } else {
       return true; 
@@ -85,6 +102,12 @@ function Message() {
 
       <div className="msg-wrapper">
         <Title title="Let's talk" />
+
+        { emailStatus !== 0 && 
+          <Alert severity={ emailStatus === 200 ? "success" : "error" }>
+            { emailStatus === 200 ? "Email sent! I'll get back to you as soon as possible." : "Sorry, something went wrong." }
+          </Alert> 
+        }
 
         <form className="msg-box" onSubmit={ handleSubmit } >
           <p className="regular-para">Want to  about discussa project or a question in general? Feel free to send me a message.</p>

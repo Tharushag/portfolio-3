@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from 'react';
-import pdf from '../Tharusha Gunawardane - Resume.pdf';
 import Button from '@mui/material/Button';
 import Hamburger from './Hamburger';
 
@@ -42,7 +41,7 @@ function Navbar(props) {
           <a href="/message-me" className="nav-link">Message me</a>
         </li>
         <li>
-          <a href={pdf}>
+          <a href={`${[process.env.PUBLIC_URL]}/pdfs/Tharusha Gunawardane - Resume.pdf`} target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" className="resume-btn">Resume</Button>
           </a>
         </li>

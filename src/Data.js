@@ -59,7 +59,7 @@ const certifications = [
   },
   {
     title: "The complete 2023 Web development Bootcamp",
-    date: "28 March 2023",
+    date: "Current",
     university: "Udemy",
   },
   {
