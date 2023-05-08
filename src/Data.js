@@ -2,6 +2,12 @@ const jobs = ["Front-End Developer", "Back-End Developer", "Web Designer", "Full
 
 const projects = [
   {
+    title: "Hype",
+    description: "A web app for an online store.",
+    link: "https://hype-eight.vercel.app/",
+    tags: ["Next.js", "Sass"]
+  },
+  {
     title: "E-domain",
     description: "A web app for a gaming event, that can register users.",
     link: "https://edomain.onrender.com",

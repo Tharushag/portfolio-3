@@ -3,7 +3,7 @@ import { projects } from '../Data';
 import Details from './Details';
 import Footer from './Footer';
 import Navbar from './Navbar';
-import Project from './Projects';
+import Project from './Project';
 import Showcase from './Showcase';
 
 function Work() {
